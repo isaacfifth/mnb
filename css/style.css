@@ -1,0 +1,121 @@
+/* Top Bar */
+
+#top-bar {
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 8px 0px;
+  display: block;
+  position: fixed;
+  z-index: 1;
+  text-align: center;
+}
+
+@media (min-width: 750px) {
+  #top-bar {
+    padding: 8px 0px;
+    text-align: left;
+  }
+}
+
+#top-bar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  float: none;
+  margin-right: 0px;
+  margin-top: 34px;
+}
+
+@media (min-width: 750px) {
+  #top-bar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+    float: right;
+    margin-top: 28px;
+    margin-right: 60px;
+  }
+}
+
+
+#top-bar ul li {
+  display: inline;
+}
+
+#top-bar ul li a {
+  text-decoration: none;
+  padding: .2em 1em;
+  color: #8E9A9A;
+  font-weight: 200;
+}
+
+.selected ul li a {
+  font-weight: 800;
+  color: #0A12D6;
+}
+
+#top-bar ul li a:hover {
+  text-decoration: underline;
+  transition: ease .2s;
+}
+
+#top-bar img {
+  margin-left: 0px;
+  width: 122px;
+}
+
+@media (min-width: 750px) {
+  #top-bar img {
+    margin-left: 60px;
+  }
+}
+
+
+/* Home Page CSS Styles */
+
+.hero img {
+  max-width: 385px;
+  width: 100%;
+  margin-bottom: 10px;
+  margin: 40px 0;
+}
+
+.separator-wave {
+  width: 100%;
+  height: 8px;
+  background-image: url(../img/separator.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 40px 0;
+}
+
+.separator {
+  width: 100%;
+  height: 40px;
+}
+
+.grid-item {
+  width: 300px;
+  margin: 1px 5px
+}
+
+.grid-item img {
+  width: 100%;
+}
+
+footer {
+  background-color: #F3F2F2;
+  padding: 40px 0 10px 0;
+}
+
+footer p {
+  color: #CBCACA;
+  font-size: 1.3rem;
+  margin: 0px;
+}
+
+.social-media img {
+  margin: 0px 5px;
+}
