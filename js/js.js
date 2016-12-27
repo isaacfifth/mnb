@@ -11,8 +11,9 @@ var msnry = new Masonry( '.grid', {
   // options
 });
 
-imagesLoaded( elem, callback )
-// options
-imagesLoaded( elem, options, callback )
-// you can use `new` if you like
-new imagesLoaded( elem, callback )
+var $grid = $('.grid').imagesLoaded( function() {
+  // init Masonry after all images have loaded
+  $grid.masonry({
+    // options...
+  });
+});
