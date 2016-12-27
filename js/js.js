@@ -1,19 +1,17 @@
-var elem = document.querySelector('.grid');
-var msnry = new Masonry( elem, {
+$('.grid').masonry({
   // options
   itemSelector: '.grid-item',
-  columnWidth: 200
 });
 
-// element argument can be a selector string
-//   for an individual element
-var msnry = new Masonry( '.grid', {
-  // options
+$('.container').imagesLoaded( function() {
+  // images have loaded
 });
 
-var $grid = $('.grid').imagesLoaded( function() {
-  // init Masonry after all images have loaded
-  $grid.masonry({
-    // options...
-  });
-});
+// options
+$('.container').imagesLoaded( {
+  // options...
+  },
+  function() {
+    // images have loaded
+  }
+);
