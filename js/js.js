@@ -1,3 +1,9 @@
+imagesLoaded( elem, callback )
+// options
+imagesLoaded( elem, options, callback )
+// you can use `new` if you like
+new imagesLoaded( elem, callback )
+
 var elem = document.querySelector('.grid');
 var msnry = new Masonry( elem, {
   // options
