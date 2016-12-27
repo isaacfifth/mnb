@@ -96,12 +96,7 @@
   height: 40px;
 }
 
-.grid-item {
-  width: 300px;
-  margin: 1px 5px
-}
-
-.grid-item img {
+.grid img {
   width: 100%;
 }
 
