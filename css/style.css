@@ -5,7 +5,7 @@
   background-color: #FFFFFF;
   padding: 8px 0px;
   display: block;
-  position: fixed;
+  position: static;
   z-index: 1;
   text-align: center;
 }
@@ -14,6 +14,7 @@
   #top-bar {
     padding: 8px 0px;
     text-align: left;
+    position: fixed;
   }
 }
 
@@ -75,11 +76,22 @@
 
 /* Home Page CSS Styles */
 
+
 .hero img {
   max-width: 385px;
   width: 100%;
   margin-bottom: 10px;
-  margin: 40px 0;
+  margin: 40px 0 40px 0;
+}
+
+@media (min-width: 750px) {
+  .hero img {
+  max-width: 385px;
+  width: 100%;
+  margin-bottom: 10px;
+  margin: 100px 0 40px 0;
+}
+
 }
 
 .separator-wave {
@@ -113,4 +125,14 @@ footer p {
 
 .social-media img {
   margin: 0px 5px;
+}
+
+.small-text {
+opacity: 0.3;
+font-size: .10em;
+color: #5C5C5C;
+letter-spacing: 2.66px;
+line-height: 30px;
+text-shadow: -3px 3px 0 #FFFFFF;
+text-transform: uppercase;
 }
